@@ -35,6 +35,52 @@ body * {
   background: var(--green);
 }
 
+/* Logo e Menu */
+#logo-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+#menu-button {
+  cursor: pointer;
+}
+
+/* Input */
+#input {
+  width: 290px;
+  height: 60px;
+  border-radius: 12px;
+  margin: 14px;
+  background: var(--light-green);
+  background-image: url("assets/search.svg");
+  background-repeat: no-repeat;
+  background-position: 1rem;
+  display: flex;
+  padding-left: 3.5rem;
+  font-size: 15px;
+  border: none;
+}
+
+#input::placeholder {
+  color: var(--text-color);
+  font-size: 15px;
+}
+
+/* Options */
+
+#option li {
+  display: flex;
+  margin: 27px auto 40px 27px;
+  align-items: center;
+}
+
+#option a {
+  margin-left: 13px;
+  text-decoration: none;
+}
+
+/* Dashboard */
 #dashboard p {
   color: var(--text-color);
   font-size: 25px;
