@@ -80,6 +80,49 @@ body * {
   text-decoration: none;
 }
 
+/* Container com Avatar */
+#avatar-container {
+  background: var(--light-green);
+  width: 320px;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+#profile-pic {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  margin-left: 14px;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 9px;
+}
+
+#info h3 {
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+#info p {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+#log-out {
+  width: 30px;
+  height: 30px;
+  margin-left: 33%;
+  cursor: pointer;
+}
+
 /* Dashboard */
 #dashboard p {
   color: var(--text-color);
