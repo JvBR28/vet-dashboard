@@ -33,6 +33,8 @@ body * {
   width: 100vh;
   max-width: 320px;
   background: var(--green);
+  transition: .2s;
+  z-index: 1000;
 }
 
 /* Logo e Menu */
@@ -40,10 +42,13 @@ body * {
   display: flex;
   justify-content: space-between;
   padding: 24px;
+  z-index: 1000;
+  overflow-x: hidden;
 }
 
 #menu-button {
   cursor: pointer;
+  z-index: 5000;
 }
 
 /* Input */
@@ -60,6 +65,7 @@ body * {
   padding-left: 3.5rem;
   font-size: 15px;
   border: none;
+  transition: 0.2s;
 }
 
 #input::placeholder {
@@ -73,11 +79,14 @@ body * {
   display: flex;
   margin: 27px auto 40px 27px;
   align-items: center;
+  cursor: pointer;
+
 }
 
 #option a {
   margin-left: 13px;
   text-decoration: none;
+
 }
 
 /* Container com Avatar */
@@ -89,6 +98,7 @@ body * {
   bottom: 0;
   display: flex;
   align-items: center;
+  transition: 0.2s;
 }
 
 #profile-pic {
@@ -96,12 +106,14 @@ body * {
   height: 45px;
   border-radius: 12px;
   margin-left: 14px;
+
 }
 
 #info {
   display: flex;
   flex-direction: column;
   margin-left: 9px;
+
 }
 
 #info h3 {
@@ -121,6 +133,57 @@ body * {
   height: 30px;
   margin-left: 33%;
   cursor: pointer;
+  transition: 0.6s;
+}
+
+/* Menu Fechado CSS */
+#sidebar.close {
+  display: flex;
+  flex-direction: column;
+  max-width: 78px;
+  transition: 0.2s;
+}
+
+/* Close Logo-menu*/
+#sidebar.close #logo {
+  display: none;
+}
+
+#sidebar.close #menu-button {
+  margin: 3px;
+}
+
+/* Close Input */
+#sidebar.close #input {
+  width: 50px;
+  height: 55px;
+  margin: 12px;
+  background: var(--light-grey);
+  background-image: url("assets/search.svg");
+  background-repeat: no-repeat;
+  background-position: 1rem;
+}
+
+/* Close Info */
+#sidebar.close #option a {
+  visibility: hidden;
+}
+
+/* Close Avatar-Container */
+#sidebar.close #avatar-container {
+  width: 78px;
+}
+
+#sidebar.close #profile-pic {
+  display: none;
+}
+
+#sidebar.close #info {
+  display: none;
+}
+
+#sidebar.close #log-out {
+  margin-left: 30%;
 }
 
 /* Dashboard */
