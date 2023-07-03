@@ -9,11 +9,11 @@
 <br>
 
 <p align="center">
-  <img alt="Preview-Sidebar-Open" src=".github/preview.jpg" width="100%">
+  <img alt="Preview-Sidebar-Open" src=".github/Preview.jpg" width="100%">
 </p>
 
 <p align="center">
-  <img alt="Preview-Sidebar-Close" src=".github/preview_2.jpg" width="100%">
+  <img alt="Preview-Sidebar-Close" src=".github/Preview_2.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
